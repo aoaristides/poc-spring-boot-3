@@ -69,7 +69,7 @@ O nível 3 é sem dúvidas o menos explorado, muitas APIs existentes no mercado 
 
 HATEOAS significa Hypermedia as the Engine of Application State. Uma API que implementa esse nível fornece aos seus clientes links que indicarão como poderá ser feita a navegação entre seus recursos. Ou seja, quem for consumir a API precisará saber apenas a rota principal e a resposta dessa requisição terá todas as demais rotas possíveis.
 
-![HATEOAS significa Hypermedia as the Engine of Application State. Uma API que implementa esse nível fornece aos seus clientes links que indicarão como poderá ser feita a navegação entre seus recursos. Ou seja, quem for consumir a API precisará saber apenas a rota principal e a resposta dessa requisição terá todas as demais rotas possíveis.](/Users/aaristides/IdeaProjects/pocs/poc-spring-boot-3/images/1_g-_jI5oc-7tD9K78FEahiw.webp "Nível 3 — HATEOAS")
+![HATEOAS significa Hypermedia as the Engine of Application State. Uma API que implementa esse nível fornece aos seus clientes links que indicarão como poderá ser feita a navegação entre seus recursos. Ou seja, quem for consumir a API precisará saber apenas a rota principal e a resposta dessa requisição terá todas as demais rotas possíveis.](images/1_g-_jI5oc-7tD9K78FEahiw.webp "Nível 3 — HATEOAS")
 
 No exemplo acima, podemos ver o resultado de uma API que implementa HATEAOS, veja que na resposta dessa API há uma coleção “links”, cada link aponta para uma rota dessa API. No caso desse exemplo, temos um link para a própria rota, um link para alterar um cliente e outra para exlcuir.
 
