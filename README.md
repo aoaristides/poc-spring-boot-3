@@ -2,6 +2,16 @@
 
 Criando uma API RESTful com Spring Boot 3, implementando todos os modelos de maturidade desenvolvidos por Leonard Richardson.
 
+# Products API RESTful
+
+- Spring Boot 3
+- Java 20
+- Spring Web MVC
+- Spring Data JPA
+- Spring Validation
+- Spring Hateoas
+- PostgreSQL 12
+
 # Padrão REST
 
 No início dos anos 2000 Roy Fielding apresentou em sua tese de doutorado o padrão REST, o principal objetivo desse padrão era tentar resolver problemas do protocolo SOAP, como alta complexidade de implementação e lentidão na comunicação. Embora não seja um padrão novo, REST tem ganhado bastante destaque nos últimos anos, sobretudo depois da popularização da arquitetura de microserviços. O problema é que nem sempre implementamos o padrão REST da forma que foi originalmente especificada por Roy Fielding, já que para ele uma API so pode ser considerada REST se de fato implementar um conjunto de constraints.
@@ -15,12 +25,12 @@ Esse é considerado o nível mais básico e uma API que implementa apenas esse n
 
 Para facilitar o entendimento podemos observar no quadro abaixo a modelagem de uma API para um crud de clientes.
 
-| Verbo HTTP | URI               | Operação  |
-|------------|-------------------|-----------|
-| GET        | /getCliente/1     | Pesquisar |
-| POST       | /salvarCliente    | Criar     |
-| POST       | /alterarCliente/1 | Alterar   |
-| GET/POST   | /excluirCliente/1 | Excluir   |
+| Verbo HTTP | URI              | Operação  |
+|------------|------------------|-----------|
+| GET        | /getProduct/1    | Pesquisar |
+| POST       | /saveProduct     | Criar     |
+| POST       | /updateProduct/1 | Alterar   |
+| GET/POST   | /removeProduct/1 | Excluir   |
 
 No modelo acima fazemos uso apenas dos métodos GET e POST e como já citado, os nomes dos métodos não seguem nenhum padrão.
 
@@ -33,10 +43,10 @@ Um detalhe interessante é que no nível 1 já usamos os verbos HTTP de forma co
 
 | Verbo HTTP | URI         | Operação  |
 |------------|-------------|-----------|
-| GET        | /clientes/1 | Pesquisar |
-| POST       | /clientes   | Criar     |
-| PUT        | /clientes/1 | Alterar   |
-| DELETE     | /clientes/1 | Excluir   |
+| GET        | /products/1 | Pesquisar |
+| POST       | /products   | Criar     |
+| PUT        | /products/1 | Alterar   |
+| DELETE     | /products/1 | Excluir   |
 
 
 ## Nível 2 — Verbos HTTP
